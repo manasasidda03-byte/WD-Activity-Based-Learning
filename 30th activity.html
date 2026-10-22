@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TravelGo Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h2>🚆 TravelGo</h2>
+  <nav><a href="#search">Search</a> <a href="#services">Services</a></nav>
+</header>
+
+<section class="hero" id="search">
+  <h1>Book Your Journey</h1>
+  <form>
+    <input placeholder="From" required>
+    <input placeholder="Destination" required>
+    <input type="date" required>
+    <select><option>Bus</option><option>Train</option></select>
+    <input type="number" min="1" placeholder="Passengers" required>
+    <button>Search</button>
+  </form>
+</section>
+
+<section id="services">
+  <h2>Available Services</h2>
+  <div class="cards">
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=600&auto=format&fit=crop" alt="Travel bus">
+      <h3>Express Bus</h3>
+      <p>Vijayawada → Hyderabad</p>
+      <p>Departure: 8:00 AM</p>
+      <p>Available seats: 18</p>
+      <h3>₹650</h3>
+      <a href="#seats">Select Seat</a>
+    </article>
+
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=600&auto=format&fit=crop" alt="Train on railway tracks">
+      <h3>Superfast Train</h3>
+      <p>Vijayawada → Chennai</p>
+      <p>Departure: 10:30 AM</p>
+      <p>Available seats: 24</p>
+      <h3>₹850</h3>
+      <a href="#seats">Select Seat</a>
+    </article>
+  </div>
+</section>
+
+<section id="seats">
+  <h2>Select Your Seat</h2>
+  <div class="seat-box">
+    <p>🟩 Available &nbsp; 🟥 Booked</p>
+    <div class="seats">
+      <button>1</button><button>2</button>
+      <button disabled>3</button><button>4</button>
+      <button>5</button><button>6</button>
+      <button disabled>7</button><button>8</button>
+    </div>
+    <p>Passenger: Adult</p>
+    <p>Total Fare: ₹650</p>
+    <button>Book Ticket</button>
+  </div>
+</section>
+
+<section>
+  <h2>Fare Details</h2>
+  <table>
+    <tr><th>Service</th><th>Time</th><th>Fare</th></tr>
+    <tr><td>Express Bus</td><td>8:00 AM</td><td>₹650</td></tr>
+    <tr><td>Superfast Train</td><td>10:30 AM</td><td>₹850</td></tr>
+  </table>
+</section>
+
+<footer>© 2026 TravelGo | Happy Journey!</footer>
+
+</body>
+</html>
+</html>
